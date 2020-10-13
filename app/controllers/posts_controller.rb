@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
 
   def index
-    if params[:authir_id]
+    if params[:author_id]
       @posts = Author.find(params[:author_id]).posts
 
     else
